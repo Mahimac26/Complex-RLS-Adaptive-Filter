@@ -143,7 +143,7 @@ The core processes the RLS updates cycle-by-cycle using a deterministic 7-state 
 ### 1. Functional HDL Timing Waveform
 The timing trace from `image_434596.png` captures the cycle-accurate execution of the complex RLS accelerator core. Upon asserting the `sample_valid` control strobe, the internal FSM cycles deterministically through its state loops—sequentially tracking the rows and columns via the index counters without any stall or hang states—and securely latches the processing array data inputs before pulsing `output_ready`.
 
-![Vivado Simulation Waveform Trace](image_a00179.png)
+![Vivado Simulation Waveform Trace](tb_result.png)
 
 ### ⏱️ Hardware Execution Latency & Performance Verification
 
